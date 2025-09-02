@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Browser Messaging</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #chat { border: 1px solid #ccc; padding: 10px; height: 250px; overflow-y: auto; margin-bottom: 10px; }
+    #chat p { margin: 5px 0; }
+    input, button { padding: 6px; margin: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Browser Messaging Demo</h1>
+
+  <div>
+    <input id="username" placeholder="Enter your name" />
+    <button onclick="join()">Join</button>
+  </div>
+
+  <div id="chat"></div>
+
+  <div>
+    <input id="to" placeholder="Send to (leave empty for broadcast)" />
+    <input id="msg" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
